@@ -1,0 +1,58 @@
+.full-name::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.full-name::-ms-input-placeholder {
+    color: black;
+}
+
+.full-name:hover {
+    opacity: 50%;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #4691f6;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+
+@tailwind base;
+@tailwind components;
+
+.has-tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    
+}
+  
+.has-tooltip:hover .tooltip {
+    visibility: visible;
+}
+
+@tailwind utilities;
